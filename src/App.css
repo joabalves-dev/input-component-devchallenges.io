@@ -1,0 +1,19 @@
+.App {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 237px 1fr;
+}
+
+.content{
+  margin: 30px 80px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

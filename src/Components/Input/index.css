@@ -1,0 +1,87 @@
+.flex-column-r {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+code {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+
+input{
+    width: 200px;
+    height: 56px;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: 1px solid #828282;
+    order: 1;
+}
+
+label{
+    order: 1;
+}
+
+input:hover, input.error:hover{
+    border: 1px solid #333333;
+}
+
+input.error:hover ~ label{
+    color: #333333;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #2962FF;
+}
+
+input:focus ~label{
+    color: #2962FF;
+}
+
+input.error, input.error:focus{
+    outline: none;
+    border: 1px solid #D32F2F;
+}
+
+input.error ~ label, input.error ~ span{
+    color: #D32F2F;
+}
+
+input.error:focus ~label{
+    color: #D32F2F;
+}
+
+input:disabled{
+    border: 1px solid #E0E0E0;
+    background: #F2F2F2
+}
+
+span{
+    color: #828282;
+    font-size: 10px;
+    order: 0;
+}
+
+.input{
+    position: relative;
+}
+
+.material-icons{
+    position: absolute;
+    top: 60%;
+}
+
+.material-icons.start{
+    left: 5px;
+}
+
+.material-icons.end{
+    right: 44%;
+    
+}
+
+.grid-full .input-full input{
+    width: 100%;
+}

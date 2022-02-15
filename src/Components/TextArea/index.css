@@ -1,0 +1,86 @@
+.flex-column-r {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  code {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 12px;
+  }
+  
+  
+  textarea{
+      width: 200px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #828282;
+      order: 1;
+  }
+  
+  label{
+      order: 1;
+  }
+  
+  textarea:hover, textarea.error:hover{
+      border: 1px solid #333333;
+  }
+  
+  textarea.error:hover ~ label{
+      color: #333333;
+  }
+  
+  textarea:focus{
+      outline: none;
+      border: 1px solid #2962FF;
+  }
+  
+  textarea:focus ~label{
+      color: #2962FF;
+  }
+  
+  textarea.error, textarea.error:focus{
+      outline: none;
+      border: 1px solid #D32F2F;
+  }
+  
+  textarea.error ~ label, textarea.error ~ span{
+      color: #D32F2F;
+  }
+  
+  textarea.error:focus ~label{
+      color: #D32F2F;
+  }
+  
+  textarea:disabled{
+      border: 1px solid #E0E0E0;
+      background: #F2F2F2
+  }
+  
+  span{
+      color: #828282;
+      font-size: 10px;
+      order: 0;
+  }
+  
+  .textarea{
+      position: relative;
+  }
+  
+  .material-icons{
+      position: absolute;
+      top: 60%;
+  }
+  
+  .material-icons.start{
+      left: 5px;
+  }
+  
+  .material-icons.end{
+      right: 44%;
+      
+  }
+  
+  .grid-full .textarea-full textarea{
+      width: 100%;
+  }

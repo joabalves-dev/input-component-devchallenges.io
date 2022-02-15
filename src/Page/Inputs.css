@@ -1,0 +1,14 @@
+.inputs .title{
+    margin-bottom: 60px;
+}
+
+.inputs .grid{
+    grid-template-columns: repeat(auto-fit, minmax(auto, 355px));
+    gap: 70px;
+    margin-bottom: 42px;
+}
+
+.inputs .grid-full{
+    grid-template-columns: 1fr;
+    margin-bottom: 42px;
+}
